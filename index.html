@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <title>Dolly Family</title>
 </head>
 <body>
@@ -99,7 +105,7 @@
                     </ul>
 
                     <!-- Places -->
-                    <div class="places-list">
+                    <div class="row places-list">
                         <div class="place-item">
                             <img class="place-img" src="./assets/images/Bông_meeting.JPG" alt="">
                             <div class="place-body">                               
@@ -137,8 +143,8 @@
                 <div class="content-section">
                     <h2 class="section-heading">CONTACT</h2>
                     <p class="section-slogan"><i>Fan? Drop a note!</i></p>
-                    <div>
-                        <div class="info">
+                    <div class="">
+                        <div class="col col-half contact-info">
                             <i class="fa fa-map-marker"></i>
                             Ho Chi Minh, Vietnam
                             <br>
@@ -148,31 +154,33 @@
                             <i class="fa fa-envelope"></i>
                             Email: quansucno@gmail.com
                         </div>
-                        <div class="info-filled">
+
+                        <div class="col col-half">
                             <form action="">
                                 <div class="main-text-holder">
-                                    <div class="text-holder">
-                                        <input type="text" placeholder="Name">
+                                    <div class="col col-half text-holder">
+                                        <input type="text" placeholder="Name" class="form-control">
                                     </div>
-                                    <div class="text-holder">
-                                        <input type="text" placeholder="Email">
+                                    <div class="col col-half text-holder">
+                                        <input type="email" placeholder="Email" class="form-control">
                                     </div>
                                     <div class="clear"></div>
                                 </div>
+
                                 <input class="" type="text" placeholder="Message">
-                                <button class="send-btn" type="submit">Send</button>
+                                <button class="form-submit-btn" type="submit">Send</button>
                             </form>
                         </div>
                         <div class="clear"></div>
+
                     </div>
                 </div>
-
             </div>
             <!-- End contact -->
     
         </div>
         <!-- End content -->
-        <img class="decoration" src="./assets/images/Family2.jpg" alt="">
+        <img class="col-full" src="./assets/images/Family2.jpg" alt="">
         <!-- Start footer -->
         <div id="footer">      
                 <a href="https://www.facebook.com/profile.php?id=100013201459371" target="_blank"><i class="fa fa-facebook-official"></i></a>
@@ -187,6 +195,7 @@
         <!-- End footer -->
     </div>
 
+    <!-- Modal -->
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">×</div>
@@ -200,29 +209,33 @@
                 <label class="modal-label">
                     <i class="fa fa-shopping-cart"></i>
                     Tickets, $15 per person
-                </label>
-              
+                </label>              
                 <input class="modal-input" type="text" placeholder="How many?">
                 
                 <label class="modal-label">
                     <i class="fa fa-user"></i>
                     Send to
-                </label>
-        
-                <input class="modal-input" type="text" placeholder="Enter email">
+                </label>       
+                <input class="modal-input" type="email" placeholder="Enter email">
+  
                 <button class="modal-pay-btn">Pay<i class="fa fa-check"></i></button>
-                <button class="modal-close-btn">Close<i class="fa fa-remove"></i></button>
-                <p class="modal-help">Need <a class="link" href="#">help?</a></p>
             </div>
+
+            <footer class="modal-footer">
+                <button class="modal-close-btn js-modal-close-btn">Close<i class="fa fa-remove"></i></button>
+                <p class="modal-help">Need <a class="link" href="#">help?</a></p>
+            </footer>
         </div>
     </div>
+    <!-- End Modal -->
     
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
         const modalClose = document.querySelector('.js-modal-close')
         const modalContainer = document.querySelector('.js-modal-container')
-        
+        const modalCloseBtn = document.querySelector('.js-modal-close-btn')
+
         function showBuyTickets() {
             modal.classList.add('open')
         }
@@ -243,6 +256,8 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+
+        modalCloseBtn.addEventListener('click', closeBuyTickets)
     </script>
 </body>
 </html>

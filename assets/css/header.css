@@ -1,0 +1,86 @@
+#header {
+    height: var(--line-height);
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#nav > li > a {
+    color: white;
+    text-transform: uppercase; 
+    line-height: var(--line-height);
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .arrow-down {
+    font-size: 12px;
+}
+
+#nav .subnav li {
+    display: block;
+    /* width: 100%; */
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38.5px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#header .search-button {
+    float: right;
+    /* width: 62px;
+    height: 100%; */
+    padding: 0 24px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+}
+
+#header .fa {
+    line-height: var(--line-height);
+    color: #fff;
+}
+
+.search-button:hover {
+    background-color: #f44336!important;
+}

@@ -1,0 +1,124 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 900px;   
+    max-width: calc(100%-50px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.modal-header {
+    color: #fff; 
+    text-align: center;   
+    background-color: #009688;
+    padding: 42px 16px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.modal-header i {
+    margin-right: 16px;
+}
+
+.modal-body {
+    background-color: #fff;
+    padding: 0.15px 15px;
+}
+
+.modal-label {
+    display: inline-block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.modal-pay-btn {
+    margin: 16px 0;
+    padding: 16px;
+    width: 100%;
+    background-color: #009688;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    font: inherit;
+}
+
+.modal-container .modal-pay-btn:hover,
+.modal-container .modal-close-btn:hover,
+.modal .modal-close:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-close-btn {
+    padding: 8px 16px;
+    margin: 16px 0;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    font: inherit;
+}
+
+.modal-footer {
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+.modal-help {
+    float: right;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.modal-help .link {
+    color: #2196F3;
+}
+
+.modal-help link:visited,
+.modal-help link:focus {
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

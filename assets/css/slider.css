@@ -1,0 +1,41 @@
+#slider {
+    margin-top: var(--line-height);
+    padding-top: 100%;
+    background: url('../images/Family.jpg') top center/ cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 32px 16px;
+    text-align: center;
+    /* Các cách căn giữa khác:
+    Cách 1:
+        left: 0;
+        right: 0;
+        text-align: center;
+    Cách 2:
+        width: 100%;
+        text-align: center;
+    */
+}
+
+#slider .text-heading {
+    font-weight: normal;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 10px 0;
+}
+
+#slider .text-description {
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#slider .text-description,
+#slider .text-heading {
+    color: var(--main-color);
+}

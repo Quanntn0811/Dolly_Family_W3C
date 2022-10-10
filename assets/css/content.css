@@ -1,0 +1,184 @@
+#about .content-section b {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+#content .content-section{
+    padding: 64px 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#content .section-heading { 
+    text-transform: uppercase; 
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-slogan {
+    font-size: 15px;
+    opacity: 0.6;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#content .about-text {
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .members-list {
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .member-item {
+    text-align: center;
+}
+
+#content .member-name {
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+#content .member-img {  
+    width: 180px;
+    border-radius: 4px;
+}
+
+#content .member-img:hover {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Tour section */
+
+#tour {
+    background-color: var(--main-color);
+}
+
+#tour .tickets-list {
+    list-style-type: none;   
+}
+
+#tour .tickets-list li {
+    font-size: 15px;
+    padding: 8px 16px ;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+#tour .sold-out {
+    background-color: #f44336;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+
+#tour .quantity {
+    float: right;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 2.5px 8px;
+    margin-right: 16px;
+    margin-top: -3px;
+}
+
+.places-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 8px;
+}
+
+.places-list .place-item {
+    /* float: left;
+    width: 33.33333%; */
+    padding: 0 8px;
+    
+}
+
+.places-list .place-img {
+    width: 100%;
+    /* display: block; */
+}
+
+.places-list .place-img:hover {
+    opacity: 0.6;
+}
+
+.places-list .place-body {
+    padding: 0.1px 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.places-list .place-body p {
+    margin: 15px 0;
+}
+
+.places-list .place-time {
+    opacity: 0.6;
+}
+
+.places-list .buy-btn {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.places-list .buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Contact section */
+
+#contact .content-section > div {
+    padding: 32px 0;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#contact .contact-info {
+    font-size: 18px;
+}
+
+#contact i {
+    width: 30px;
+}
+
+.text-holder {
+    padding: 0 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.main-text-holder {
+    margin: 0 -8px 8px -8px;
+}
+
+.form-submit-btn {
+    text-transform: uppercase;
+    float: right;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
