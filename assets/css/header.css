@@ -45,6 +45,7 @@
     background-color: #fff;
     min-width: 160px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: modalEase ease 0.5s;
 }
 
 #nav .arrow-down,
@@ -56,6 +57,7 @@
 .small-subnav li {
     display: block;
     width: 100%;
+    
 }
 
 #nav .subnav a, 
@@ -67,10 +69,9 @@
 
 #nav > li:hover > a,
 #nav .subnav li:hover {
-    /* display: inline-block;
-    width: 100%; */
     color: #000 !important;
     background-color: #ccc !important;
+    opacity: 1;
 }
 
 .smallnav > li:hover > a,
@@ -87,7 +88,8 @@
 }
 
 .small-subnav.open {
-    display: block;
+    opacity: 1;
+    height: auto
 }
 
 #header .search-btn {
@@ -114,12 +116,13 @@
     display: none;
     background-color: var(--main-color);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    animation-duration: 0.5;
+    animation: modalEase ease 0.5s;
 }
 
 .smallnav li a {
     padding: 0 24px;
     line-height: var(--line-height);
-
 }
 
 .small-subnav li {
@@ -131,5 +134,17 @@
 }
 
 .smallnav.open {
+
     display: block;
+}
+
+@keyframes modalEase {
+    from {      
+        opacity: 0.8;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
