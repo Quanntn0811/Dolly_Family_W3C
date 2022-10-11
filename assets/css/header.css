@@ -113,6 +113,7 @@
 .smallnav {
     display: none;
     background-color: var(--main-color);
+    border-bottom: rgba(0, 0, 0, 0.3);
 }
 
 .smallnav li a {
