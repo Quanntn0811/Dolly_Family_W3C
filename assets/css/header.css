@@ -16,7 +16,6 @@
 #nav li {
     display: inline-block;
     position: relative;
-    
 }
 
 #nav > li > a {
@@ -39,39 +38,60 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#nav .arrow-down {
+.small-subnav {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .arrow-down,
+.smallnav .arrow-down {
     font-size: 12px;
 }
 
-#nav .subnav li {
+#nav .subnav li,
+.small-subnav li {
     display: block;
-    /* width: 100%; */
+    width: 100%;
 }
 
-#nav .subnav a {
+#nav .subnav a, 
+.small-subnav a{
     color: #000;
     padding: 0 16px;
     line-height: 38.5px;
 }
 
 #nav > li:hover > a,
-#nav .subnav li:hover,
-.smallnav li:hover{
+#nav .subnav li:hover {
+    /* display: inline-block;
+    width: 100%; */
     color: #000 !important;
     background-color: #ccc !important;
 }
 
-#nav li:hover .subnav {
+.smallnav > li:hover > a,
+.small-subnav li:hover {
+    display: inline-block;
+    width: 100%;
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+#nav li:hover .subnav, 
+.smallnav li:hover .small-subnav{
+    display: block;
+}
+
+.small-subnav.open {
     display: block;
 }
 
 #header .search-btn {
-    /* width: 62px;
-    height: 100%; */
     padding: 0 24px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     cursor: pointer;
 }
 
@@ -95,10 +115,13 @@
     background-color: var(--main-color);
 }
 
-.smallnav li {
+.smallnav li a {
     padding: 0 24px;
     line-height: var(--line-height);
-    width: 100%;
+}
+
+.small-subnav li {
+    padding: 0 0;
 }
 
 .smallnav a {

@@ -1,47 +1,58 @@
+
 const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalClose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalCloseBtn = document.querySelector('.js-modal-close-btn')
-        const smallNavBtn = document.querySelector('.js-bars-btn')
-        const smallNav = document.querySelector('.js-smallnav')
-        const main = document.querySelector('.js-main')
+const modal = document.querySelector('.js-modal')
+const modalClose = document.querySelector('.js-modal-close')
+const modalContainer = document.querySelector('.js-modal-container')
+const modalCloseBtn = document.querySelector('.js-modal-close-btn')
+const smallNavMenu = document.querySelector('.js-bars-menu')
+const smallNav = document.querySelector('.js-smallnav')
+const main = document.querySelector('.js-main')
+const moreSubNav = document.querySelector('.js-more-subnav')
+const smallSubNav = document.querySelector('.js-small-subnav')
 
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
+function showBuyTickets() {
+    modal.classList.add('open')
+}
 
-        function closeBuyTickets() {
-            modal.classList.remove('open')
-        }
+function closeBuyTickets() {
+    modal.classList.remove('open')
+}
 
-        function closeSmallNav() {
-            smallNav.classList.remove('open')
-        }
-            
+function closeSmallNav() {
+    smallNav.classList.remove('open')
+}      
 
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
+function closeSmallSubNav() {
+    smallSubNav.classList.remove('open')
+}      
 
-        modalClose.addEventListener('click', closeBuyTickets)
+for (const buyBtn of buyBtns) {
+    buyBtn.addEventListener('click', showBuyTickets)
+}
 
-        modal.addEventListener('click', closeBuyTickets)
+modalClose.addEventListener('click', closeBuyTickets)
 
-        modalContainer.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
+modal.addEventListener('click', closeBuyTickets)
 
-        modalCloseBtn.addEventListener('click', closeBuyTickets)
+modalContainer.addEventListener('click', function(event) {
+    event.stopPropagation()
+})
 
-        smallNavBtn.addEventListener('click', function() {
-            smallNav.classList.toggle('open')
-        })
+modalCloseBtn.addEventListener('click', closeBuyTickets)
 
-        main.addEventListener('click', closeSmallNav)
+smallNavMenu.addEventListener('click', function(event) {
+    smallNav.classList.toggle('open')
+    closeSmallSubNav()
+    event.stopPropagation()
+})
 
- 
-        smallNavBtn.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
-     
+main.addEventListener('click', closeSmallNav)
+
+moreSubNav.addEventListener('click', function(event) {
+    smallSubNav.classList.toggle('open')
+    event.stopPropagation()
+})
+
+smallSubNav.addEventListener('click', closeSmallNav)
+
+
