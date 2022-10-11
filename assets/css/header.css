@@ -55,16 +55,15 @@
 
 #nav > li:hover > a,
 #nav .subnav li:hover {
-    color: #000;
-    background-color: #ccc;
+    color: #000 !important;
+    background-color: #ccc !important;
 }
 
 #nav li:hover .subnav {
     display: block;
 }
 
-#header .search-button {
-    float: right;
+#header .search-btn {
     /* width: 62px;
     height: 100%; */
     padding: 0 24px;
@@ -78,6 +77,14 @@
     line-height: var(--line-height);
 }
 
-.search-button:hover {
+.search-btn:hover,
+.bars-btn {
     background-color: #f44336!important;
+}
+
+.bars-btn {
+    /* display: inline-block; */
+    /* display: none; */
+    padding: 0 24px;
+    cursor: pointer;
 }
