@@ -1,0 +1,66 @@
+@media (min-width: 740px) and (max-width: 1023px) {
+    .members-list {      
+        display: grid !important;
+        justify-content: center !important;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }  
+}
+
+@media (max-width: 739px) {
+    #nav li:nth-child(2),
+    #nav li:nth-child(3),
+    #nav li:nth-child(4),
+    #nav li:nth-child(5) {
+        display: none;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    .bars-btn {
+        display: inline-block !important; 
+    }
+
+    .text-content {
+        display: none;
+    }
+
+    .members-list {      
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .member-img {
+        margin-bottom: 16px;
+    }
+
+    .places-list {
+        flex-direction: column;
+    }
+
+    .place-item {
+        margin-bottom: 16px;
+    }
+
+    .contact-info {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;       
+    }
+
+    .fan-info {
+        width: 100%;
+    }
+
+    .text-holder {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+

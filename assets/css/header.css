@@ -54,7 +54,8 @@
 }
 
 #nav > li:hover > a,
-#nav .subnav li:hover {
+#nav .subnav li:hover,
+.smallnav li:hover{
     color: #000 !important;
     background-color: #ccc !important;
 }
@@ -78,13 +79,32 @@
 }
 
 .search-btn:hover,
-.bars-btn {
+.bars-btn:hover {
     background-color: #f44336!important;
 }
 
 .bars-btn {
     /* display: inline-block; */
-    /* display: none; */
+    display: none;
     padding: 0 24px;
     cursor: pointer;
+}
+
+.smallnav {
+    display: none;
+    background-color: var(--main-color);
+}
+
+.smallnav li {
+    padding: 0 24px;
+    line-height: var(--line-height);
+    width: 100%;
+}
+
+.smallnav a {
+    text-decoration: none;
+}
+
+.smallnav.open {
+    display: block;
 }

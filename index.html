@@ -4,7 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/web-icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <link rel="stylesheet" href="./assets/css/general.css">
@@ -13,10 +12,11 @@
     <link rel="stylesheet" href="./assets/css/content.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Dolly Family</title>
 </head>
 <body>
-    <div id="main">
+    <div id="main" class="js-main">
         <!-- Start header -->
         <div id="header">
             <ul id="nav">
@@ -39,11 +39,23 @@
             <div class="search-btn pull-right">
                 <i class="fa fa-search text-white"></i>
             </div>          
-            <div class="bars-btn text-white pull-right">
+            <div class="bars-btn text-white pull-right js-bars-btn">
                 <i class="fa fa-bars"></i>
             </div>
+
+            <!-- small nav -->
+            <div class="smallnav js-smallnav">
+                <ul>
+                    <li><a class="uppercase text-white" href="#about">About</a></li>
+                    <li><a class="uppercase text-white" href="#tour">Tour</a></li>
+                    <li><a class="uppercase text-white" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- end -->
+
         </div>     
         <!-- End header --> 
+
         <!-- Start slider -->
         <div id="slider">
             <div class="text-content text-center">
@@ -52,6 +64,7 @@
             </div>         
         </div>
         <!-- End slider --> 
+
         <!-- Start content  -->
         <div id="content">
             <!-- About section -->
@@ -233,36 +246,7 @@
         </div>
     </div>
     <!-- End Modal -->
-    
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalClose = document.querySelector('.js-modal-close')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalCloseBtn = document.querySelector('.js-modal-close-btn')
 
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-
-        function closeBuyTickets() {
-            modal.classList.remove('open')
-        }
-            
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-
-        modalClose.addEventListener('click', closeBuyTickets)
-
-        modal.addEventListener('click', closeBuyTickets)
-
-        modalContainer.addEventListener('click', function(event) {
-            event.stopPropagation()
-        })
-
-        modalCloseBtn.addEventListener('click', closeBuyTickets)
-    </script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
 </html>
