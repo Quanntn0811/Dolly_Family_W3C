@@ -1,5 +1,4 @@
 #about .content-section b {
-    text-transform: uppercase;
     color: var(--main-color);
 }
 
@@ -10,11 +9,9 @@
 }
 
 #content .section-heading { 
-    text-transform: uppercase; 
     font-size: 30px;
     font-weight: 500;
     margin: 10px 0;
-    text-align: center;
     letter-spacing: 4px;
 }
 
@@ -22,7 +19,6 @@
     font-size: 15px;
     opacity: 0.6;
     margin: 15px 0;
-    text-align: center;
 }
 
 #content .about-text {
@@ -32,13 +28,9 @@
 }
 
 #content .members-list {
-    margin: 35px 0;
+    margin: 32px 0;
     display: flex;
     justify-content: space-between;
-}
-
-#content .member-item {
-    text-align: center;
 }
 
 #content .member-name {
@@ -125,17 +117,7 @@
     opacity: 0.6;
 }
 
-.places-list .buy-btn {
-    margin-bottom: 16px;
-    padding: 8px 16px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font: inherit;
-}
-
-.places-list .buy-btn:hover {
+.btn:hover {
     color: #000;
     background-color: #ccc;
 }
@@ -160,7 +142,7 @@
     padding: 0 8px;
 }
 
-input {
+.form-control {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -170,14 +152,6 @@ input {
     margin: 0 -8px 8px -8px;
 }
 
-.form-submit-btn {
-    text-transform: uppercase;
-    float: right;
-    padding: 8px 16px;
-    margin: 16px 0;
-    background-color: #000;
-    color: #fff;
-}
 
 
 

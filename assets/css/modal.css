@@ -17,7 +17,8 @@
 
 .modal-container {
     width: 900px;   
-    max-width: calc(100%-50px);
+    margin: 0 10px;
+    max-width: calc(100%-32px);
     min-height: 200px;
     position: relative;
     animation: modalFadeIn ease 0.5s;
@@ -28,13 +29,10 @@
     top: 0;
     right: 0;
     padding: 8px 16px;
-    color: #fff;
     font-size: 24px;
 }
 
 .modal-header {
-    color: #fff; 
-    text-align: center;   
     background-color: #009688;
     padding: 42px 16px;
     font-size: 30px;
@@ -70,7 +68,6 @@
     width: 100%;
     background-color: #009688;
     text-transform: uppercase;
-    color: #fff;
     border: none;
     font: inherit;
 }
@@ -80,13 +77,12 @@
 .modal .modal-close:hover {
     cursor: pointer;
     background-color: #ccc;
-    color: #000;
+    color: #000 !important;
 }
 
 .modal-close-btn {
     padding: 8px 16px;
     margin: 16px 0;
-    color: white;
     background-color: #f44336;
     border: none;
     font: inherit;
@@ -97,18 +93,12 @@
     padding: 0 15px;
 }
 
-.modal-help {
-    float: right;
+.modal-text-help {
     margin: 15px 0;
     font-size: 15px;
 }
 
-.modal-help .link {
-    color: #2196F3;
-}
-
-.modal-help link:visited,
-.modal-help link:focus {
+.modal-text-help .link {
     color: #2196F3;
 }
 

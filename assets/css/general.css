@@ -1,6 +1,7 @@
 :root {
     --line-height: 46px;
     --main-color: #864D1E;
+    --text-white: #fff;
 }
 
 * {
@@ -14,12 +15,25 @@
 }
 
 html {
+    scroll-behavior: smooth;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-white {
-    color: #fff !important;
+    color: var(--text-white) !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.uppercase {
+    text-transform: uppercase !important;
 }
 
 .row {
@@ -29,7 +43,6 @@ html {
 
 .col {
     float: left;
-    /* padding: 0 8px; */
 }
 
 .col-half {
@@ -42,4 +55,18 @@ html {
 
 .col-full {
     width: 100%;
+}
+
+.mt-top {
+    margin-top: 16px !important;
+}
+
+.btn {
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font: inherit;
 }

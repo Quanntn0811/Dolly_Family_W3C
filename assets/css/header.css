@@ -19,8 +19,6 @@
 }
 
 #nav > li > a {
-    color: white;
-    text-transform: uppercase; 
     line-height: var(--line-height);
 }
 
@@ -78,7 +76,6 @@
 
 #header .fa {
     line-height: var(--line-height);
-    color: #fff;
 }
 
 .search-button:hover {

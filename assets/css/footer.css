@@ -1,11 +1,5 @@
 #footer {
-    position: relative;
     padding: 64px 16px;
-    text-align: center; 
-}
-
-#footer p {
-    opacity: 0.65;
 }
 
 #footer i {
@@ -13,19 +7,20 @@
     padding: 0 4px;
 }
 
-#footer > a:visited{
+#footer > a {
     text-decoration: none;
     color: #676662;
 }
 
-#footer .lala {
-    color: #000;
-}
-
-#footer i:hover {
+#footer a:hover {
     opacity: 0.3;
 }
 
-#footer p {
+#footer .copyright {
+    opacity: 0.65;
     margin: 15px 0;
+}
+
+#footer .copyright a {
+    color: #000;
 }
