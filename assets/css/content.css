@@ -45,7 +45,7 @@
 }
 
 #content .member-img:hover {
-    width: 100%;
+    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -92,12 +92,14 @@
     /* float: left;
     width: 33.33333%; */
     padding: 0 8px;
+ 
     
 }
 
 .places-list .place-img {
     width: 100%;
     /* display: block; */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
 
 .places-list .place-img:hover {

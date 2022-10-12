@@ -20,6 +20,7 @@
 
 #nav > li > a {
     line-height: var(--line-height);
+    transition: background-color 0.3s;
 }
 
 #nav li a {
@@ -123,6 +124,7 @@
 .smallnav li a {
     padding: 0 24px;
     line-height: var(--line-height);
+    transition: background-color 0.3s;
 }
 
 .small-subnav li {
@@ -134,7 +136,6 @@
 }
 
 .smallnav.open {
-
     display: block;
 }
 
